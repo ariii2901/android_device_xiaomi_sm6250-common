@@ -10,7 +10,6 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-TARGET_USES_PREBUILT_CAMERA_SERVICE := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -233,9 +232,6 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
-# Inherit MiuiCam
--include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
